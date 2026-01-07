@@ -48,3 +48,24 @@
   background: #52525b;
 }
 
+/* --- Typewriter Animation for Landing Page --- */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.typewriter-effect {
+  overflow: hidden; /* Hides content before it's revealed */
+  border-right: 3px solid black; /* The "cursor" */
+  white-space: nowrap; /* Keeps text on one line */
+  display: inline-block; /* Necessary for width animation */
+  /* Adjust duration (4s) and steps (35) based on text length */
+  animation: 
+    typewriter 4s steps(35, end) 0.5s 1 normal both, 
+    blink 0.8s step-end infinite;
+}

@@ -132,7 +132,7 @@ export const Hand = ({ className }: IconProps) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_261_25)">
+      <g clipPath="url(#clip0_261_25)">
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -189,7 +189,7 @@ export const GoogleIcon = ({ className }: IconProps) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <g clip-path="url(#clip0_262_755)">
+      <g clipPath="url(#clip0_262_755)">
         <path
           d="M18.815 9.71882C18.815 9.07304 18.7626 8.42376 18.6509 7.78845H9.69019V11.4467H14.8216C14.6086 12.6266 13.9244 13.6703 12.9226 14.3336V16.7072H15.984C17.7817 15.0526 18.815 12.6091 18.815 9.71882Z"
           fill="#4285F4"

@@ -4,7 +4,7 @@ import "./globals.css";
 
 const ashley = localFont({
   src: [
-    { path: "../fonts/Ashley-Southine.otf", weight: "100", style: "normal" },
+    { path: "../fonts/Ashley-Southine.ttf", weight: "100", style: "normal" },
     ],
   variable: "--font-ashley",
   display: "swap",
