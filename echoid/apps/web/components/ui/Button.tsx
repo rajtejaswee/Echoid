@@ -16,7 +16,7 @@ interface ButtonProps {
 const variantStyles = {
     primary: "bg-black text-white hover:bg-gray-800 shadow-md", // Fallback
     oauth: "bg-white/80 hover:bg-white text-black border border-white/40 shadow-sm backdrop-blur-md", // For Google/Apple
-    glass: "bg-white/20 hover:bg-white/30 text-black border border-white/20 shadow-lg backdrop-blur-xl", // For Sign In
+    glass: "bg-white/80 hover:bg-white/30 text-black border border-white/20 shadow-lg backdrop-blur-xxl", // For Sign In
     ghost: "bg-transparent hover:bg-white/10 text-black", // For plain text buttons
 };
 

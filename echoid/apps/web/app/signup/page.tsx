@@ -1,3 +1,4 @@
+// app/signup/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button"; 
@@ -6,12 +7,13 @@ import { GoogleIcon, AppleIcon, GithubIcon, LinkedinIcon, XIcon } from "@/icons/
 
 export default function SignUpPage() {
   return (
-    <main className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden font-isidora text-black">
+    // Ensured text-white is used for base color to match the components
+    <main className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden font-isidora text-white">
       
       {/* 1. Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image 
-          src="/auth-bg.webp" 
+          src="/landing-bg.jpg" 
           alt="Background" 
           fill 
           className="object-cover object-center"
@@ -20,11 +22,12 @@ export default function SignUpPage() {
       </div>
 
       {/* 2. Top Navigation Bar */}
-      <nav className="absolute top-0 w-full px-6 py-4 flex justify-between items-center md:px-8 md:py-5">
-        {/* Logo */}
-        <div className="w-24 md:w-28 mt-[-50px]">
+      <nav className="absolute top-0 w-full px-6 py-6 flex justify-between items-center md:px-8 md:py-5">
+        
+        {/* Logo - Mobile: w-20/mt-0 | Desktop: w-28/mt-[-50px] */}
+        <div className="w-20 mt-0 md:w-28 md:mt-[-50px]">
            <Image 
-             src="/echoid-black.png" 
+             src="/echoid-orange.png" 
              alt="Echoid Logo" 
              width={150} 
              height={50} 
@@ -32,21 +35,21 @@ export default function SignUpPage() {
            />
         </div>
         
-        {/* Top Right Button: Logic switched to Sign In for better UX */}
-        <Link href="/">
+        {/* Top Right Button: Hidden on Mobile (hidden md:block) */}
+        <Link href="/signin" className="hidden md:block">
             <Button 
                 text="Sign In" 
                 variant="glass" 
                 size="sm"
-                className="!rounded-full px-6 !bg-white/30 hover:!bg-white/50 mt-[-60px]"
+                className="!rounded-full px-6 !bg-white/30 hover:!bg-white/50 mt-0 md:mt-[-60px]"
             />
         </Link>
       </nav>
 
       {/* 3. Main Glass Card */}
-      <div className="w-full max-w-[380px] p-6 md:p-8 rounded-3xl bg-white/25 backdrop-blur-xl border border-white/40 shadow-2xl flex flex-col gap-4 mx-4 mb-4 z-10">
+      <div className="w-full max-w-[350px] md:max-w-[380px] p-6 md:p-8 rounded-3xl bg-white/25 backdrop-blur-xl border border-white/40 shadow-2xl flex flex-col gap-4 mx-4 mb-4 z-10">
         
-        <h1 className="text-2xl md:text-3xl text-center text-black/80 font-normal mb-1">
+        <h1 className="text-2xl md:text-3xl text-center text-white/80 font-normal mb-1">
           Create an Account
         </h1>
 
@@ -70,9 +73,9 @@ export default function SignUpPage() {
 
         {/* OR Divider */}
         <div className="flex items-center gap-3 my-0">
-          <div className="h-[1px] flex-1 bg-black/10"></div>
-          <span className="text-black/40 text-xs uppercase tracking-wider">OR</span>
-          <div className="h-[1px] flex-1 bg-black/10"></div>
+          <div className="h-[1px] flex-1 bg-white/10"></div>
+          <span className="text-white/40 text-xs uppercase tracking-wider">OR</span>
+          <div className="h-[1px] flex-1 bg-white/10"></div>
         </div>
 
         {/* Manual Form */}
@@ -80,19 +83,19 @@ export default function SignUpPage() {
           <Input 
             type="email" 
             placeholder="Email" 
-            className="bg-white/40 border-white/50 h-11 text-sm"
+            className="bg-white/40 border-white/50 h-11 text-sm placeholder:text-white/60"
           />
           
           <Input 
             type="password" 
             placeholder="Password"
-            className="bg-white/40 border-white/50 h-11 text-sm"
+            className="bg-white/40 border-white/50 h-11 text-sm placeholder:text-white/60"
           />
 
           <Input 
             type="password" 
             placeholder="Confirm Password"
-            className="bg-white/40 border-white/50 h-11 text-sm"
+            className="bg-white/40 border-white/50 h-11 text-sm placeholder:text-white/60"
           />
 
           <Button 
@@ -104,11 +107,11 @@ export default function SignUpPage() {
         </form>
 
         {/* Card Footer: Split Links */}
-        <div className="flex justify-between items-center mt-1 text-[11px] md:text-xs text-black/70">
-            <Link href="/privacy" className="hover:text-black hover:underline">
+        <div className="flex justify-between items-center mt-1 text-[11px] md:text-xs text-white/70">
+            <Link href="/privacy" className="hover:text-white hover:underline">
                 View our Privacy Policy
             </Link>
-            <Link href="/" className="hover:text-black hover:underline">
+            <Link href="/signin" className="hover:text-white hover:underline">
                 Have an Account? Sign In
             </Link>
         </div>
@@ -116,12 +119,12 @@ export default function SignUpPage() {
 
       {/* 4. Bottom Footer (Credits) */}
       <footer className="absolute bottom-4 md:bottom-6 flex flex-col items-center gap-3 text-center w-full px-4 z-0">
-        <p className="text-black/70 font-isidora text-sm md:text-base">
+        <p className="text-white/70 font-isidora text-xs md:text-base">
           Built by a developer who got tired of losing links.🔗
         </p>
         
         {/* Social Icons */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 text-white">
           <Link href="https://github.com" target="_blank" className="hover:opacity-70 transition-opacity">
             <GithubIcon className="w-5 h-5 md:w-6 md:h-6" />
           </Link>

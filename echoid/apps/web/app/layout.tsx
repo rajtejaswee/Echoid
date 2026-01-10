@@ -28,7 +28,8 @@ const flake = localFont({
 
 const IsidoraSans = localFont({
   src: [
-    { path: "../fonts/Isidorasans-regular.otf", weight: "100", style: "normal" },
+    { path: "../fonts/Isidorasans-regular.otf", weight: "200", style: "normal" },
+    { path: "../fonts/Isidorasans-light.otf", weight: "100", style: "normal" },
     ],
   variable: "--font-isidora-sans",
   display: "swap",

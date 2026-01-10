@@ -8,13 +8,13 @@ export const LinkedinIcon = ({ className }: IconProps) => {
       width="476"
       height="476"
       viewBox="0 0 476 476"
-      fill="none"
+      fill="currentColor"
+      stroke="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
       <path
         d="M73.1429 195.048H146.286V402.286H73.1429V195.048ZM318.671 187.977C339.261 188.099 365.605 198.217 381.696 214.552C398.385 233.204 402.286 254.281 402.286 280.381V402.286H329.143V289.036C329.143 268.312 320.744 243.066 293.315 242.225C277.224 242.481 266.862 251.733 259.17 267.337C256.975 272.457 257.463 278.199 257.463 283.916L256 402.286H182.857V195.048H256L257.463 222.11C262.749 213.359 269.758 205.774 278.065 199.814C289.768 191.39 303.433 188.209 318.671 187.977ZM109.714 95.6952C128.488 95.9512 147.139 110.69 147.87 133.12C148.358 153.125 130.926 170.545 109.227 170.545H108.739C90.0876 170.545 71.8019 155.307 70.9486 133.12C71.3143 113.371 87.8933 96.1951 109.714 95.6952ZM0 0V475.429H475.429V0H0Z"
-        fill="white"
       />
     </svg>
   );
@@ -26,13 +26,13 @@ export const GithubIcon = ({ className }: IconProps) => {
       width="507"
       height="494"
       viewBox="0 0 507 494"
-      fill="none"
+      fill="currentColor"
+      stroke="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
       <path
         d="M253.037 0C322.963 0 382.617 24.6914 432 74.0741C481.383 123.457 506.074 182.914 506.074 252.444C506.074 307.753 489.877 357.333 457.481 401.185C425.086 445.037 383.605 475.654 333.037 493.037C321.975 494.617 316.444 490.272 316.444 480V411.259C316.444 389.926 310.519 374.123 298.667 363.852C333.432 359.901 361.284 349.235 382.222 331.852C403.16 314.469 413.63 284.049 413.63 240.593C413.63 213.728 404.938 190.815 387.556 171.852C396.247 151.309 395.457 128.79 385.185 104.296C370.963 100.346 348.049 109.037 316.444 130.37C295.901 124.84 274.568 122.074 252.444 122.074C230.321 122.074 209.383 124.84 189.63 130.37C175.407 120.889 162.568 113.975 151.111 109.63C139.654 105.284 131.556 103.506 126.815 104.296H119.704C110.222 128.79 109.432 151.309 117.333 171.852C99.9506 190.815 91.2593 213.728 91.2593 240.593C91.2593 284.049 101.926 314.469 123.259 331.852C144.593 349.235 172.247 359.901 206.222 363.852C197.531 371.753 192.395 383.21 190.815 398.222C157.63 412.444 133.136 405.333 117.333 376.889C107.852 361.086 94.8148 352.395 78.2222 350.815C76.642 350.815 74.8642 351.012 72.8889 351.407C70.9136 351.802 68.9383 353.185 66.963 355.556C64.9877 357.926 68.3457 361.481 77.037 366.222C88.0988 371.753 97.1852 384 104.296 402.963C105.086 404.543 105.877 406.321 106.667 408.296C107.457 410.272 110.025 414.025 114.37 419.556C118.716 425.086 123.852 429.235 129.778 432C135.704 434.765 143.802 437.333 154.074 439.704C164.346 442.074 176.198 441.284 189.63 437.333V480C189.63 490.272 184.099 494.617 173.037 493.037C122.469 475.654 80.9877 445.037 48.5926 401.185C16.1975 357.333 0 307.753 0 252.444C0 182.914 24.6914 123.457 74.0741 74.0741C123.457 24.6914 183.111 0 253.037 0Z"
-        fill="white"
       />
     </svg>
   );
@@ -44,17 +44,25 @@ export const XIcon = ({ className }: IconProps) => {
       width="512"
       height="463"
       viewBox="0 0 512 463"
-      fill="none"
+      fill="currentColor"
+      stroke="currentColor"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
       <path
         d="M403.221 0H481.728L310.208 196.053L512 462.784H354.005L230.272 300.992L88.6613 462.784H10.112L193.579 253.077L0 0.0213343H162.005L273.856 147.904L403.221 0ZM375.68 415.808H419.179L138.368 44.5227H91.6907L375.68 415.808Z"
-        fill="white"
+        
       />
     </svg>
   );
 };
+
+export const CloseIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <line x1="18" y1="6" x2="6" y2="18" />
+    <line x1="6" y1="6" x2="18" y2="18" />
+  </svg>
+);
 
 export const LightMode = ({ className }: IconProps) => {
   return (
@@ -134,40 +142,40 @@ export const Hand = ({ className }: IconProps) => {
     >
       <g clipPath="url(#clip0_261_25)">
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M0.571068 41.099C3.57374 36.8357 19.0422 14.7899 21.4612 11.2813C23.8781 7.77144 27.4476 7.12039 31.8052 9.891C36.1606 12.6614 34.9659 11.8261 37.5914 13.5052L29.0364 26.3205C27.0852 25.5722 24.9085 24.7984 22.5464 28.6016C20.1843 32.4049 15.8078 37.2469 11.4839 43.9567C7.16009 50.6665 -2.4295 45.3602 0.571068 41.099Z"
           fill="white"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M1.42443 41.294C3.87082 37.7473 20.5277 13.6302 22.3125 11.4742C24.0972 9.31988 26.7754 7.70317 31.4174 10.3975C32.4815 11.015 34.5781 12.3328 37.2057 14.0097L29.5126 25.4428C27.5593 24.6966 24.5313 24.351 22.4832 27.6455C19.8071 31.9576 12.8514 41.9809 10.7106 43.9567C7.13899 48.6271 -1.02406 44.8386 1.42443 41.294ZM14.4107 47.8872C13.2687 45.1058 14.4592 41.4954 18.9937 41.0757L14.4107 47.8872Z"
-          fill="black"
+          fill="#FF7936"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M41.1909 0L48.8185 5.49247L13.5071 54.2446L3.44934 59.9983L5.89088 48.7363L41.1909 0Z"
           fill="white"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M41.3652 1.08289L47.7306 5.67182L12.9797 53.6525L4.57581 58.4594L6.61256 49.0636L41.3652 1.08289Z"
-          fill="black"
+          fill="#FF7936"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M41.4242 15.8541C50.1857 21.506 61.2271 28.7712 63.1657 29.9711C65.0874 31.1605 68.8486 31.7032 71 31.7117V50.6898C60.8183 50.87 26.4088 51.7095 19.4362 51.8919C11.6124 52.0954 11.0035 40.8467 19.4362 40.4884C27.869 40.1301 29.9888 39.6998 32.667 38.9811C35.3451 38.2624 37.939 36.4011 35.8045 33.3695C33.6678 30.3379 33.238 29.6892 32.1929 28.4299L41.4242 15.8541Z"
           fill="white"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M40.9207 16.399C49.6821 22.0509 61.1049 29.5535 62.6621 30.516C64.9631 31.9406 68.8466 32.4834 71.0001 32.4918V49.9521C60.6456 50.1429 25.1487 51.0397 19.4363 51.1499C13.0369 51.275 11.3997 41.4043 19.4363 41.046C27.4729 40.6856 29.9888 40.5754 32.667 39.8567C35.3452 39.138 39.2223 36.9396 36.5947 33.2105C34.9511 30.8764 33.7143 29.0532 32.667 27.7939L40.9207 16.399Z"
-          fill="black"
+          fill="#FF7936"
         />
       </g>
       <defs>
@@ -233,3 +241,69 @@ export const AppleIcon = ({ className }: IconProps) => {
     </svg>
   );
 };
+
+export const PlusIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M5 12h14M12 5v14" />
+  </svg>
+);
+
+export const ShareIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+    <polyline points="16 6 12 2 8 6" />
+    <line x1="12" y1="2" x2="12" y2="15" />
+  </svg>
+);
+
+export const TrashIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+  </svg>
+);
+
+export const SearchIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <circle cx="11" cy="11" r="8" />
+    <path d="m21 21-4.3-4.3" />
+  </svg>
+);
+
+
+export const  TweetIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+  </svg>
+);
+
+export const VideoIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <rect x="2" y="7" width="20" height="15" rx="2" ry="2" />
+    <polyline points="17 2 12 7 7 2" />
+  </svg>
+);
+
+export const DocumentIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+    <polyline points="14 2 14 8 20 8" />
+    <line x1="16" y1="13" x2="8" y2="13" />
+    <line x1="16" y1="17" x2="8" y2="17" />
+    <line x1="10" y1="9" x2="8" y2="9" />
+  </svg>
+);
+
+export const LinkIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+  </svg>
+);
+
+export const TagIcon = ({ className }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+    <line x1="7" y1="7" x2="7.01" y2="7" />
+  </svg>
+);
+
